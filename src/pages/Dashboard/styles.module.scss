@@ -1,0 +1,31 @@
+.bgImg {
+  background: url('../../assets/bg-image-secondary.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 50vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -99;
+}
+
+.mainContent {
+  width: 90vw;
+  max-width: 984px;
+  margin: 10rem auto 2rem;
+
+  .rooms {
+    h2 {
+      color: #fff;
+      font-weight: 700;
+    }
+  }
+
+  .buttonGroup {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+  }
+}

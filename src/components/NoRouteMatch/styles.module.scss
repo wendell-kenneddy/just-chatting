@@ -1,0 +1,33 @@
+.content {
+  background: url('../../assets/bg-image-secondary.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+
+  img {
+    width: 20rem;
+  }
+
+  h1 {
+    color: #fff;
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .content {
+    img {
+      width: 30rem;
+    }
+
+    h1 {
+      font-size: 3rem;
+    }
+  }
+}

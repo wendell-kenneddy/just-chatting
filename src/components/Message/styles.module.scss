@@ -1,0 +1,28 @@
+.messageContainer {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  font-size: 1.6rem;
+  color: #dcddde;
+
+  img {
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+  }
+
+  > div {
+    background: var(--text-blue-primary);
+    border-radius: 0.4rem;
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.6rem;
+  }
+
+  .messageAuthorName {
+    font-size: 1.8rem;
+    color: #979c9f;
+  }
+}

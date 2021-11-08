@@ -1,0 +1,14 @@
+.copyButton {
+  background: transparent;
+  border: 0.3rem solid #fff;
+  border-radius: 0.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  color: #fff;
+
+  span {
+    font-size: 1.4rem;
+  }
+}

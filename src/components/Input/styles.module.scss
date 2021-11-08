@@ -1,0 +1,37 @@
+.inputWrapper {
+  background: transparent;
+  border: 0.1rem solid var(--text-black);
+  border-radius: 0.4rem;
+  width: 100%;
+  height: 4.8rem;
+  position: relative;
+
+  label {
+    background: #fff;
+    padding: 0 1rem;
+    position: absolute;
+    top: 25%;
+    left: 1rem;
+    font-size: 1.8rem;
+    color: var(--text-gray);
+    transition: all 0.2s;
+    cursor: text;
+
+    &.inputFocused {
+      font-size: 1.4rem;
+      top: -1rem;
+      left: 1.5rem;
+      color: var(--primary);
+      cursor: default;
+    }
+  }
+
+  input {
+    background: transparent;
+    border: none;
+    padding: 0 1rem;
+    width: 100%;
+    height: 100%;
+    outline-color: var(--primary);
+  }
+}

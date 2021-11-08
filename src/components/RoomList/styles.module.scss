@@ -1,0 +1,20 @@
+.roomList {
+  width: 100%;
+  margin-top: 2.4rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+@media (min-width: 768px) {
+  .roomList {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1244px) {
+  .roomList {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

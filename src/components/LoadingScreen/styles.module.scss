@@ -1,0 +1,27 @@
+.mainContent {
+  background: var(--primary-variant);
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+    color: var(--text-blue-primary);
+  }
+
+  .animatedTitle {
+    animation: pulse 0.6s ease-in-out alternate infinite;
+  }
+}
+
+@keyframes pulse {
+  from {
+    filter: brightness(1);
+  }
+
+  to {
+    filter: brightness(1.5);
+  }
+}
