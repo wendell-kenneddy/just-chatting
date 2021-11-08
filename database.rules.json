@@ -1,0 +1,17 @@
+{
+  "rules": {
+    "rooms": {
+      ".indexOn": "authorId",
+      ".read": "auth != null",
+      ".write": "auth != null",
+      "$roomId": {
+        ".read": "auth != null",
+        ".write": "auth != null && (!data.exists() || data.child('authorId').val() == auth.id)",
+        "messages": {
+          ".read": "auth != null",
+          ".write": "auth != null && (!data.exists() || data.parent().child('authorId').val() == auth.id)",
+        }
+      }
+    }
+  }
+}
