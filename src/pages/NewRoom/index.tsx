@@ -12,7 +12,7 @@ import toast from 'react-hot-toast';
 import { push, ref } from 'firebase/database';
 import { db } from '../../services/firebase';
 
-export function NewRoom() {
+export default function NewRoom() {
   const { user } = useAuth();
   const { isLogged } = useLoginInfo();
   const [roomName, setRoomName] = useState('');
