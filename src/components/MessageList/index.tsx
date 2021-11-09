@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { IMessage, Message } from '../Message';
+import Message, { IMessage } from '../Message';
 
 import styles from './styles.module.scss';
 
