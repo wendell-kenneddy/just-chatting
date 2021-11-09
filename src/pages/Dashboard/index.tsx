@@ -21,7 +21,7 @@ import {
 } from '@firebase/database';
 import { db } from '../../services/firebase';
 
-export function Dashboard() {
+export default function Dashboard() {
   const { user } = useAuth();
   const { isLogged } = useLoginInfo();
   const [rooms, setRooms] = useState<IRoom[]>([]);
