@@ -8,7 +8,7 @@ import toast from 'react-hot-toast';
 import heroImg from '../../assets/hero.svg';
 import styles from './styles.module.scss';
 
-export function Landing() {
+export default function Landing() {
   const { user, signInWithGoogle } = useAuth();
 
   useEffect(() => {
