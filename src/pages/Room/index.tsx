@@ -38,7 +38,7 @@ interface IFirebaseMessage {
   content: string;
 }
 
-export function Room() {
+export default function Room() {
   const history = useHistory();
   const params = useParams<IRoomParams>();
   const roomId = params.id;
