@@ -13,7 +13,7 @@ import toast from 'react-hot-toast';
 import { child, get, ref } from '@firebase/database';
 import { db } from '../../services/firebase';
 
-export function JoinRoom() {
+export default function JoinRoom() {
   const { isLogged } = useLoginInfo();
   const [roomId, setRoomId] = useState('');
   const history = useHistory();
