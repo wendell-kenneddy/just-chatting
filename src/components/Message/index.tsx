@@ -1,3 +1,4 @@
+import { memo } from 'react';
 import { FaUserCircle } from 'react-icons/fa';
 import { truncateText } from '../../utils/truncateText';
 import styles from './styles.module.scss';
@@ -15,6 +16,8 @@ export interface IMessage {
 interface IMessageProps {
   message: IMessage;
 }
+
+export default memo(Message);
 
 export function Message({ message }: IMessageProps) {
   return (
